@@ -1,0 +1,19 @@
+    a:hover {
+        color: #EAF6F6;
+    }
+
+
+    .navbar-brand{                                
+        font-family: Stencil Std, fantasy;
+        font-size: xx-large;
+    }    
+    
+    .navbar-nav{
+        font-variant-position: normal;
+        padding-right: 5rem !important;
+        padding-left: 27rem !important;
+        padding-bottom: 0.5rem;
+        width: 600px;
+    }
+
+   
