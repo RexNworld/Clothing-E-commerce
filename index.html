@@ -2,57 +2,306 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Shopping</title>
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
   </head>
   <body>
-    <section id="title">
-      <!-- Nav Bar -->
-
-      <div class="navbar-fixed-top"></div>
-      <nav class="navbar bg-dark navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="">Shopping</a>
+    <!-- navbar -->
+    <nav class="bg-dark p-2 d-none d-md-block">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <div class="nav-color">
+            <a href="" class="text-reset text-decoration-none fst-italic"
+              >Free Shipping</a
+            >
+            <div class="vr text-white"></div>
+            <a href="" class="text-reset text-decoration-none fst-italic"
+              >Download App</a
+            >
+          </div>
+          <div class="nav-color">
+            <a href="" class="text-reset text-decoration-none fst-italic"
+              >Contact Us</a
+            >
+            <div class="vr text-white"></div>
+            <a href="" class="text-reset text-decoration-none fst-italic"
+              >Help</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar sticky-top navbar-expand-lg border-bottom bg-white">
+      <div class="container">
         <button
-          class="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          class="navbar-toggler border-0 d-md-none"
         >
-          <span class="navbar-toggler-icon"></span>
+          <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
-        <div class="container-fluid">
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
+        <a href="/" class="navbar-brand brand-style"
+          ><img
+            src="assets/img/logo.png"
+            alt="e-Pharmacy"
+            height="30"
+            srcset=""
+            class="d-inline-block align-text-top logo-navbar"
+        /></a>
+
+        <ul class="navbar-nav d-md-none">
+          <li class="nav-item">
+            <a class="btn" href="#">
+              <span class="btn-link"
+                ><i class="fa fa-search" style="font-size: 20px"></i>
+              </span>
+            </a>
+            <a class="btn" href="#">
+              <span class="position-relative"
+                ><i class="fa fa-heart" style="font-size: 20px"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+                  style="font-size: 10px"
+                  >9</span
+                ></span
+              >
+            </a>
+            <a class="btn" href="#">
+              <span class="position-relative"
+                ><i class="fa fa-shopping-cart" style="font-size: 20px"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+                  style="font-size: 10px"
+                  >9</span
+                ></span
+              >
+            </a>
+          </li>
+        </ul>
+        <!-- Search Bar -->
+        <div class="collapse navbar-collapse">
+          <div class="ms-auto">
+            <div class="input-group">
+              <span class="input-group-text dropdown-toggle"
+                ><i class="fa fa-map-marker" aria-hidden="true"> Kolkata</i>
+              </span>
+              <div class="vr"></div>
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search for products..."
+                aria-label="Search"
+              />
+            </div>
+          </div>
+          <div class="me-0 m-2 vr"></div>
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="Login">Login</a>
+              <a class="btn" href="#">
+                <span
+                  class="position-relative btn-link me-2"
+                  style="text-decoration: none"
+                  ><i class="fa fa-heart" style="font-size: 20px"></i
+                  ><span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+                    style="font-size: 10px"
+                    >9</span
+                  ></span
+                >
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Wishlist">🤍</a>
+              <a class="btn" href="#">
+                <span class="position-relative btn-link me-2"
+                  ><i class="fa fa-shopping-cart" style="font-size: 20px"></i
+                  ><span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+                    style="font-size: 10px"
+                    >9</span
+                  ></span
+                >
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">🛒</a>
+              <a class="btn" href="#">
+                <span class="btn-link me-2"
+                  ><i class="fa fa-user" style="font-size: 20px"></i
+                ></span>
+              </a>
             </li>
           </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <!-- Responsve -->
+    <div class="container-fluid bg-white d-none d-md-block p-3">
+      <div class="header-nav d-flex justify-content-center">
+        <a
+          class="text-decoration-none text-uppercase text-center text-reset mx-2"
+          aria-current="page"
+          href="#"
+          >Man</a
+        >
+        <a
+          class="text-decoration-none text-uppercase text-center text-reset mx-2"
+          aria-current="page"
+          href="#"
+          >Women</a
+        >
+        <a
+          class="text-decoration-none text-uppercase text-center text-reset mx-2"
+          aria-current="page"
+          href="#"
+          >Kids</a
+        >
+      </div>
+    </div>
+
+    <!-- The sidebar for Mobile Phones -->
+    <div
+      class="offcanvas offcanvas-start"
+      style="width: 270px"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          <!-- {% isAuth query if true%} -->
+          <!-- Hello name -->
+          <!-- {% else %} -->
+          Welcome Guest
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <!-- {% isAuth query if true%} -->
+        <div class="border-bottom p-2 mx-4 d-flex justify-content-evenly">
+          <a href="" class="text-decoration-none">Login</a>/<a
+            href=" "
+            class="text-decoration-none"
+            >Sign up</a
+          >
+        </div>
+        <!-- {% else %} -->
+        <ul class="navbar-nav p-4">
+          <p
+            class="text-uppercase fw-bold text-muted text-light border-bottom m-0"
+          >
+            Menu
+          </p>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Man</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Women</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Accessories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"
+              >Customise products</a
+            >
+          </li>
+        </ul>
+        <ul class="navbar-nav bg-light p-4">
+          <p
+            class="text-uppercase fw-bold text-muted text-light border-bottom m-0"
+          >
+            Profile
+          </p>
+          <li class="nav-item col">
+            <a class="nav-link" aria-current="page" href="#">Profile</a>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link" aria-current="page" href="#">Women</a>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link" aria-current="page" href="#">Accessories</a>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link" aria-current="page" href="#"
+              >Customise products</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section>
+      <!-- Your Content Here -->
+      <div class="container">
+        <div class="d-flex justify-content-evenly" style="height: 60vh">
+          <div class="card position-relative">
+            <img
+              src="assets/img/boy.jpg"
+              alt="Boy image"
+              class="img-fluid"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+            <button
+              class="btn btn-theme position-absolute top-100 start-50 translate-middle"
+            >
+              SHOP MEN
+            </button>
+          </div>
+          <div class="card position-relative">
+            <img
+              src="assets/img/girl.jpg"
+              alt="Girl image"
+              class="img-fluid"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+            <button
+              class="btn btn-theme position-absolute top-100 start-50 translate-middle"
+            >
+              SHOP WOMEN
+            </button>
+          </div>
+          <div class="card position-relative">
+            <img
+              src="assets/img/kid.jpg"
+              alt="Kid image"
+              class="img-fluid"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+            <button
+              class="btn btn-theme position-absolute top-100 start-50 translate-middle"
+            >
+              SHOP KIDS
+            </button>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
     </section>
+    <footer class="fixed-bottom bg-dark text-white text-center">
+      @copyrights name
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
