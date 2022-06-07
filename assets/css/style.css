@@ -1,11 +1,249 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
-  --lg-font: 'Kaisei Tokumin', serif;
+  /* --lg-font: 'montserrat-regular', sans-serif; */
+  --bs-btn-bg: #ee7300;
+  --bs-link-color: #000 !important;
+  --bs-link-hover-color: #ee7300 !important;
 }
 body {
-  font-family: var(--lg-font);
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
 }
+body::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+nav-font {
+  width: -webkit-fit-content;
+  width: fit-content;
+  text-transform: uppercase;
+  font-family: montserrat-medium, sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  display: block;
+  color: #0e0e0e;
+  letter-spacing: 0.07px;
+  line-height: 13px;
+  padding: 21px 24px;
+}
+#p-category > a {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding-top: 133.333%;
+}
+
+#p-category > a > img {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  border-radius: 5px;
+  height: 100%;
+  object-fit: cover;
+}
+#main-discount > a {
+  display: block;
+  width: 100%;
+  padding-top: 67.8125%;
+  position: relative;
+}
+
+#main-discount > a > img {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#main-popular-h2 {
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+#main-offers {
+  display: flex;
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+  justify-content: space-evenly;
+}
+#main-offers > div {
+  height: 200px;
+  line-height: 10px;
+}
+#main-offers > div > a > img {
+  height: 80%;
+  border-radius: 10px;
+}
+#main-offers > div > p,
+.swiper-slide p {
+  font-size: 12px;
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05px;
+  margin-top: 19px;
+  text-decoration: none;
+}
+/* .swiper-slide img:hover {
+  content: '';
+  display: block;
+  height: 96%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+.main-slider {
+  transition-duration: 0ms;
+  transform: translate3d(-546.786px, 0px, 0px);
+}
+.main-slider a {
+  display: block;
+  padding-top: 35.7143%;
+  position: relative;
+  width: 531.786px;
+  margin-right: 15px;
+}
+.main-slider a img {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+.tag-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.tag-container .tag-row {
+  -ms-flex: auto 0 0px;
+  flex: auto 0 0;
+  padding: 3px 4px 3px 8px;
+  max-width: 90%;
+}
+.tag-container .tag-wrapper .p-tag .plp {
+  font-family: montserrat-semibold, sans-serif !important;
+  font-size: 8px !important;
+  line-height: 10px !important;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #000;
+}
+.tag-seller {
+  font-family: montserrat-semibold, sans-serif !important;
+  font-size: 8px !important;
+  line-height: 10px !important;
+  color: #000;
+}
+.price {
+  font-family: montserrat-semibold, sans-serif !important;
+  font-size: 16px !important;
+  line-height: 14px !important;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.price span {
+  font-family: montserrat-regular, sans-serif !important;
+  font-size: 12px !important;
+  line-height: 8px !important;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.actialPrice {
+  font-family: montserrat-regular, sans-serif !important;
+  font-size: 12px !important;
+  line-height: 12px !important;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+/* :-ms-fullscreen */
+/* #main-bestseller {
+  display: flex;
+  width: 98%;
+  margin: 20px auto;
+  text-align: center;
+  justify-content: space-evenly;
+}
+#main-bestseller > div {
+  height: 50vh;
+  line-height: 10px;
+}
+#main-bestseller > div > a > img {
+  height: 100%;
+}
+#main-bestseller > div > p,
+.swiper-slide p {
+  font-size: 12px;
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05px;
+  margin-top: 19px;
+  text-decoration: none;
+} */
+
+.swiper-pagination span {
+  background: var(--bs-btn-bg);
+  border-radius: 2.5px;
+  width: 20px;
+  height: 4px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
+}
+
+.bestSellerSlider .swiper-wrapper a .innerPart img {
+  display: block;
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
+}
+#main-view-all {
+  font-size: 12px;
+  font-family: montserrat-bold, sans-serif;
+  color: #42a2a2 !important;
+  display: block;
+  margin: 10px auto;
+  letter-spacing: -0.2px;
+  text-decoration: underline !important;
+  text-align: center;
+  outline: 0;
+  padding: 10px;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
+}
+.swiper-wrapper a {
+  color: #000;
+  background-color: transparent;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  -webkit-text-decoration-skip: objects;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+.bg-theme,
 .nav-item a,
 .nav-color a,
 .navbar i {
@@ -40,6 +278,13 @@ body {
   line-height: 13px;
   padding: 21px 24px;
 }
+.section-image {
+  background-image: url('../img/bg-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 /* a:hover {
   color: #eaf6f6;
 }

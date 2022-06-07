@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css" />
     <!-- <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" /> -->
     <link
       rel="stylesheet"
@@ -18,161 +19,153 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="bg-dark p-2 d-none d-md-block">
-      <div class="container">
-        <div class="d-flex justify-content-between">
-          <div class="nav-color">
-            <a href="" class="text-reset text-decoration-none fst-italic"
-              >Free Shipping</a
-            >
-            <div class="vr text-white"></div>
-            <a href="" class="text-reset text-decoration-none fst-italic"
-              >Download App</a
-            >
-          </div>
-          <div class="nav-color">
-            <a href="" class="text-reset text-decoration-none fst-italic"
-              >Contact Us</a
-            >
-            <div class="vr text-white"></div>
-            <a href="" class="text-reset text-decoration-none fst-italic"
-              >Help</a
-            >
-          </div>
-        </div>
-      </div>
-    </nav>
-    <nav class="navbar sticky-top navbar-expand-lg border-bottom bg-white">
-      <div class="container">
-        <button
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasExample"
-          aria-controls="offcanvasExample"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          class="navbar-toggler border-0 d-md-none"
-        >
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </button>
-
-        <a href="/" class="navbar-brand brand-style"
-          ><img
-            src="assets/img/logo.png"
-            alt="e-Pharmacy"
-            height="30"
-            srcset=""
-            class="d-inline-block align-text-top logo-navbar"
-        /></a>
-
-        <ul class="navbar-nav d-md-none">
-          <li class="nav-item">
-            <a class="btn" href="#">
-              <span class="btn-link"
-                ><i class="fa fa-search" style="font-size: 20px"></i>
-              </span>
-            </a>
-            <a class="btn" href="#">
-              <span class="position-relative"
-                ><i class="fa fa-heart" style="font-size: 20px"></i>
-                <span
-                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
-                  style="font-size: 10px"
-                  >9</span
-                ></span
-              >
-            </a>
-            <a class="btn" href="#">
-              <span class="position-relative"
-                ><i class="fa fa-shopping-cart" style="font-size: 20px"></i>
-                <span
-                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
-                  style="font-size: 10px"
-                  >9</span
-                ></span
-              >
-            </a>
-          </li>
-        </ul>
-        <!-- Search Bar -->
-        <div class="collapse navbar-collapse">
-          <div class="ms-auto">
-            <div class="input-group">
-              <span class="input-group-text dropdown-toggle"
-                ><i class="fa fa-map-marker" aria-hidden="true"> Kolkata</i>
-              </span>
-              <div class="vr"></div>
-              <input
-                class="form-control"
-                type="search"
-                placeholder="Search for products..."
-                aria-label="Search"
-              />
+    <div class="sticky-top">
+      <nav class="bg-light p-2 d-none d-md-block">
+        <div class="container">
+          <div class="d-flex justify-content-between">
+            <div class="nav-color nav-font">
+              <a href="" class="text-reset text-decoration-none fst-italic p-2">Facebook</a>
+              <a href="" class="text-reset text-decoration-none fst-italic p-2">Twitter</a>
+              <a href="" class="text-reset text-decoration-none fst-italic p-2">Instagram</a>
+              <a href="" class="text-reset text-decoration-none fst-italic p-2">Youtube</a>
+            </div>
+            <div class="nav-color">
+              <a href="" class="text-reset text-decoration-none fst-italic p-2">Track Order</a>
+              <div class="vr bg-theme"></div>
+              <a href="" class="text-reset text-decoration-none fst-italic p-2">Download App</a>
+              <div class="vr bg-theme"></div>
+              <a href="" class="text-reset text-decoration-none fst-italic p-2">Contact Us</a>
             </div>
           </div>
-          <div class="me-0 m-2 vr"></div>
-          <ul class="navbar-nav">
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+          <button
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler border-0 d-md-none"
+          >
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+
+          <a href="/" class="navbar-brand brand-style"
+            ><img
+              src="assets/img/logo.png"
+              alt="e-Pharmacy"
+              height="30"
+              srcset=""
+              class="d-inline-block align-text-top logo-navbar"
+          /></a>
+
+          <ul class="navbar-nav d-md-none">
             <li class="nav-item">
               <a class="btn" href="#">
-                <span
-                  class="position-relative btn-link me-2"
-                  style="text-decoration: none"
-                  ><i class="fa fa-heart" style="font-size: 20px"></i
-                  ><span
+                <span class="btn-link"><i class="fa fa-search" style="font-size: 20px"></i> </span>
+              </a>
+              <a class="btn" href="#">
+                <span class="position-relative"
+                  ><i class="fa fa-heart" style="font-size: 20px"></i>
+                  <span
                     class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
                     style="font-size: 10px"
                     >9</span
                   ></span
                 >
               </a>
-            </li>
-            <li class="nav-item">
               <a class="btn" href="#">
-                <span class="position-relative btn-link me-2"
-                  ><i class="fa fa-shopping-cart" style="font-size: 20px"></i
-                  ><span
+                <span class="position-relative"
+                  ><i class="fa fa-shopping-cart" style="font-size: 20px"></i>
+                  <span
                     class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
                     style="font-size: 10px"
                     >9</span
                   ></span
                 >
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="btn" href="#">
-                <span class="btn-link me-2"
-                  ><i class="fa fa-user" style="font-size: 20px"></i
-                ></span>
               </a>
             </li>
           </ul>
+          <!-- Search Bar -->
+          <div class="collapse navbar-collapse">
+            <div class="ms-auto">
+              <div class="input-group">
+                <span class="input-group-text dropdown-toggle"
+                  ><i class="fa fa-map-marker" aria-hidden="true"> Kolkata</i>
+                </span>
+                <div class="vr"></div>
+                <input
+                  class="form-control"
+                  type="search"
+                  placeholder="Search for products..."
+                  aria-label="Search"
+                />
+              </div>
+            </div>
+            <div class="me-0 m-2 vr"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="btn" href="#">
+                  <span class="position-relative btn-link me-2" style="text-decoration: none"
+                    ><i class="fa fa-heart" style="font-size: 20px"></i
+                    ><span
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+                      style="font-size: 10px"
+                      >9</span
+                    ></span
+                  >
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn" href="#">
+                  <span class="position-relative btn-link me-2"
+                    ><i class="fa fa-shopping-cart" style="font-size: 20px"></i
+                    ><span
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+                      style="font-size: 10px"
+                      >9</span
+                    ></span
+                  >
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn" href="#">
+                  <span class="btn-link me-2"
+                    ><i class="fa fa-user" style="font-size: 20px"></i
+                  ></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Responsve -->
+      <div class="container-fluid bg-white">
+        <div class="header-nav d-flex justify-content-center">
+          <a
+            class="text-decoration-none text-uppercase text-center mx-2"
+            aria-current="page"
+            href="#"
+            >Man</a
+          >
+          <a
+            class="text-decoration-none text-uppercase text-center mx-2"
+            aria-current="page"
+            href="#"
+            >Women</a
+          >
+          <a
+            class="text-decoration-none text-uppercase text-center mx-2"
+            aria-current="page"
+            href="#"
+            >Kids</a
+          >
         </div>
       </div>
-    </nav>
-    <!-- Responsve -->
-    <div class="container-fluid bg-white d-none d-md-block p-3">
-      <div class="header-nav d-flex justify-content-center">
-        <a
-          class="text-decoration-none text-uppercase text-center text-reset mx-2"
-          aria-current="page"
-          href="#"
-          >Man</a
-        >
-        <a
-          class="text-decoration-none text-uppercase text-center text-reset mx-2"
-          aria-current="page"
-          href="#"
-          >Women</a
-        >
-        <a
-          class="text-decoration-none text-uppercase text-center text-reset mx-2"
-          aria-current="page"
-          href="#"
-          >Kids</a
-        >
-      </div>
     </div>
-
     <!-- The sidebar for Mobile Phones -->
     <div
       class="offcanvas offcanvas-start"
@@ -198,19 +191,13 @@
       <div class="offcanvas-body p-0">
         <!-- {% isAuth query if true%} -->
         <div class="border-bottom p-2 mx-4 d-flex justify-content-evenly">
-          <a href="" class="text-decoration-none">Login</a>/<a
-            href=" "
-            class="text-decoration-none"
+          <a href="" class="text-decoration-none">Login</a>/<a href=" " class="text-decoration-none"
             >Sign up</a
           >
         </div>
         <!-- {% else %} -->
         <ul class="navbar-nav p-4">
-          <p
-            class="text-uppercase fw-bold text-muted text-light border-bottom m-0"
-          >
-            Menu
-          </p>
+          <p class="text-uppercase fw-bold text-muted text-light border-bottom m-0">Menu</p>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">Man</a>
           </li>
@@ -221,17 +208,11 @@
             <a class="nav-link" aria-current="page" href="#">Accessories</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#"
-              >Customise products</a
-            >
+            <a class="nav-link" aria-current="page" href="#">Customise products</a>
           </li>
         </ul>
         <ul class="navbar-nav bg-light p-4">
-          <p
-            class="text-uppercase fw-bold text-muted text-light border-bottom m-0"
-          >
-            Profile
-          </p>
+          <p class="text-uppercase fw-bold text-muted text-light border-bottom m-0">Profile</p>
           <li class="nav-item col">
             <a class="nav-link" aria-current="page" href="#">Profile</a>
           </li>
@@ -242,16 +223,638 @@
             <a class="nav-link" aria-current="page" href="#">Accessories</a>
           </li>
           <li class="nav-item col">
-            <a class="nav-link" aria-current="page" href="#"
-              >Customise products</a
-            >
+            <a class="nav-link" aria-current="page" href="#">Customise products</a>
           </li>
         </ul>
       </div>
     </div>
+    <header class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="">
+            <div class="swiper focusSlider">
+              <div class="swiper-wrapper main-slider">
+                <a class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1x1-just-arrived-women-1654276552.gif"
+                    alt=""
+                /></a>
+                <a class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1x1-just-arrived-women-1654276552.gif"
+                    alt=""
+                /></a>
+                <a class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1x1-just-arrived-women-1654276552.gif"
+                    alt=""
+                /></a>
+                <a class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1x1-just-arrived-women-1654276552.gif"
+                    alt=""
+                /></a>
+                <a class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1x1-just-arrived-women-1654276552.gif"
+                    alt=""
+                /></a>
+                <a class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1x1-just-arrived-women-1654276552.gif"
+                    alt=""
+                /></a>
+                <a class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1x1-just-arrived-women-1654276552.gif"
+                    alt=""
+                /></a>
+                <a class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1x1-just-arrived-women-1654276552.gif"
+                    alt=""
+                /></a>
+                <a class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1x1-just-arrived-women-1654276552.gif"
+                    alt=""
+                /></a>
+                <a class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1x1-just-arrived-women-1654276552.gif"
+                    alt=""
+                /></a>
+                <a class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1x1-just-arrived-women-1654276552.gif"
+                    alt=""
+                /></a>
+              </div>
+              <div class="swiper-pagination d-none d-md-block"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- little banner after slider -->
     <section>
-      <!-- Your Content Here -->
-      <div class="container">
+      <div class="container-fluid pt-4">
+        <div class="row">
+          <div class="col-xs-12">
+            <a
+              href=""
+              style="display: block; width: 100%; padding-top: 10.4167%; position: relative"
+              ><img
+                src="https://images.bewakoof.com/uploads/grid/app/desktop-tod-strip-women-1654149139.jpg"
+                alt=""
+                style="position: absolute; width: 100%; top: 0px"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Offers -->
+    <section>
+      <div class="container pt-4">
+        <div class="row">
+          <div class="col-xs-12">
+            <div id="main-offers" class="swiper swiperSecTwo">
+              <div class="swiper-wrapper">
+                <a href="" class="swiper-slide">
+                  <img
+                    src="https://images.bewakoof.com/uploads/grid/app/tod-thumbnail-discount-1637307127-1640757473.jpg"
+                    alt=""
+                  />
+                  <p>Offers</p>
+                </a>
+                <a href="" class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/tod-thumbnail-collab-store-1637307127.jpg"
+                    alt=""
+                  />
+                  <p>Pop Culture</p>
+                </a>
+                <a href="" class="swiper-slide">
+                  <img
+                    src="https://images.bewakoof.com/uploads/grid/app/tod-thumbnail-best-seller-1637307127.jpg"
+                    alt=""
+                  />
+                  <p>BestSeller</p>
+                </a>
+                <a href="" class="swiper-slide">
+                  <img
+                    src="https://images.bewakoof.com/uploads/grid/app/vote-for-design-1641715844.jpg"
+                    alt=""
+                  />
+                  <p>Vote For Designs</p>
+                </a>
+                <a href="" class="swiper-slide">
+                  <img
+                    src="https://images.bewakoof.com/uploads/grid/app/tod-thumbnail-new-arrival-1637307130.jpg"
+                    alt=""
+                  />
+                  <p>New Arrivals</p>
+                </a>
+                <a href="" class="swiper-slide">
+                  <img
+                    src="https://images.bewakoof.com/uploads/grid/app/new-tod-thumbnail-cosmos-1--1--1640666014.jpg"
+                    alt=""
+                  />
+                  <p>Cosmos</p>
+                </a>
+                <a href="" class="swiper-slide">
+                  <img
+                    src="https://images.bewakoof.com/uploads/grid/app/tod-thumbnail-plus-size-1637307128.jpg"
+                    alt=""
+                  />
+                  <p>Plus Size</p>
+                </a>
+                <a href="" class="swiper-slide">
+                  <img
+                    src="https://images.bewakoof.com/uploads/grid/app/last-sizes-left-1639915515.jpg"
+                    alt=""
+                  />
+                  <p>Last Sizes Left</p>
+                </a>
+                <a href="" class="swiper-slide">
+                  <img
+                    src="https://images.bewakoof.com/uploads/grid/app/tod-thumbnail-essentials-1637307130.jpg"
+                    alt=""
+                  />
+                  <p>Essentials</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- little banner after slider -->
+    <section>
+      <div class="container-fluid pt-4">
+        <div class="row">
+          <div class="col-xs-12">
+            <a
+              href=""
+              style="display: block; width: 100%; padding-top: 10.4167%; position: relative"
+              ><img
+                src="https://images.bewakoof.com/uploads/grid/app/desktop---strip-1440---x-150---tribe-1634552003.png"
+                alt=""
+                style="position: absolute; width: 100%; top: 0px"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Populer Categories -->
+    <section>
+      <div class="container-fluid pt-4 m-0">
+        <h2 id="main-popular-h2">POPULAR CATEGORIES</h2>
+        <div class="row mx-1">
+          <div class="col-2 p-1 pb-4" id="p-category">
+            <a href="">
+              <img
+                src="https://images.bewakoof.com/uploads/grid/app/Jackets-1636468734.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-2 p-1 pb-4" id="p-category">
+            <a href="">
+              <img
+                src="https://images.bewakoof.com/uploads/grid/app/Sweaters-1637224277.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-2 p-1 pb-4" id="p-category">
+            <a href="">
+              <img
+                src="https://images.bewakoof.com/uploads/grid/app/Sweatshirt-1636468735.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-2 p-1 pb-4" id="p-category">
+            <a href="">
+              <img
+                src="https://images.bewakoof.com/uploads/grid/app/Printed-Tshirts-1636468735.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="col-2 p-1 pb-4" id="p-category">
+            <a href="">
+              <img src="https://images.bewakoof.com/uploads/grid/app/Vests-1636468736.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-2 p-1 pb-4" id="p-category">
+            <a href="">
+              <img
+                src="https://images.bewakoof.com/uploads/grid/app/Full-Sleeves-1637224277.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-2 p-1 pb-4" id="p-category">
+            <a href="">
+              <img
+                src="https://images.bewakoof.com/uploads/grid/app/bottom-nav-bootm-wear--0008-jeans-1636468734.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="col-2 p-1 pb-4" id="p-category">
+            <a href="">
+              <img
+                src="https://images.bewakoof.com/uploads/grid/app/bottom-nav-bootm-wear--0006-joggers-1636468734.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-2 p-1 pb-4" id="p-category">
+            <a href="">
+              <img
+                src="https://images.bewakoof.com/uploads/grid/app/bottom-nav-bootm-wear--0001-shorts-1637224311.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-2 p-1 pb-4" id="p-category">
+            <a href="">
+              <img
+                src="https://images.bewakoof.com/uploads/grid/app/bottom-nav-bootm-wear--0003-pyjama-1636468733.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-2 p-1 pb-4" id="p-category">
+            <a href="">
+              <img
+                src="https://images.bewakoof.com/uploads/grid/app/bottom-nav-bootm-wear--0004-pants-1636468733.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-2 p-1 pb-4" id="p-category">
+            <a href="">
+              <img
+                src="https://images.bewakoof.com/uploads/grid/app/tod-refresh-accessories-bottom-navigation-0005-slipper-1636468736.jpg"
+                alt=""
+                style="position: absolute; width: 100%; top: 0px"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Discount -->
+    <section>
+      <div class="container-fluid pt-4">
+        <h2 id="main-popular-h2">DISCOUNT PE DISCOUNT</h2>
+        <div class="row">
+          <div class="col-6 p-1" id="main-discount">
+            <a href="">
+              <img
+                src="https://images.bewakoof.com/uploads/grid/app/buy-3-men-oof-1641996155.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-6 p-1" id="main-discount">
+            <a href="">
+              <img
+                src="https://images.bewakoof.com/uploads/grid/app/b2g1-mid-banner-oof-1641996154.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-6 p-1" id="main-discount">
+            <a href="">
+              <img
+                src="https://images.bewakoof.com/uploads/grid/app/style-promotion-puffer-jacket-mid-size-banner-men-1641552781.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-6 p-1" id="main-discount">
+            <a href="">
+              <img
+                src="https://images.bewakoof.com/uploads/grid/app/cosmos-oof-banner-2-1642430265.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Best Seller -->
+    <section>
+      <div class="container-fluid pt-4">
+        <h2 id="main-popular-h2">BESTSELLER FOR MEN</h2>
+        <div class="row">
+          <div class="col-xs-12">
+            <div id="main-bestseller" class="swiper bestSellerSlider">
+              <div class="swiper-wrapper">
+                <a href="" class="swiper-slide position-relative">
+                  <div class="innerPart">
+                    <img
+                      src="https://images.bewakoof.com/uploads/grid/app/tod-thumbnail-discount-1637307127-1640757473.jpg"
+                      alt=""
+                    />
+                    <div class="tag-container">
+                      <div class="d-flex tag-wrapper" style="min-height: 15px">
+                        <div
+                          class="d-flex align-items-center tag-row p-tag"
+                          style="background: rgba(82, 82, 82, 0.8)"
+                        >
+                          <span class="plp" style="color: rgb(255, 255, 255)">DEGITAL PRINT</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex pt-2">
+                      <div class="price me-2"><span>₹</span>526</div>
+                      <div class="actialPrice text-decoration-line-through fw-light text-muted">
+                        <span>₹152</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="" class="swiper-slide position-relative"
+                  ><div class="innerPart">
+                    <img
+                      src="https://images.bewakoof.com/uploads/grid/app/tod-thumbnail-collab-store-1637307127.jpg"
+                      alt=""
+                    />
+                    <div class="tag-container">
+                      <div class="d-flex tag-wrapper" style="min-height: 15px">
+                        <div
+                          class="d-flex align-items-center tag-row p-tag"
+                          style="background: rgba(82, 82, 82, 0.8)"
+                        >
+                          <span class="plp" style="color: rgb(255, 255, 255)">DEGITAL PRINT</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex pt-2">
+                      <div class="price me-2"><span>₹</span>526</div>
+                      <div class="actialPrice text-decoration-line-through fw-light text-muted">
+                        <span>₹152</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="" class="swiper-slide position-relative">
+                  <div class="innerPart">
+                    <img
+                      src="https://images.bewakoof.com/uploads/grid/app/tod-thumbnail-best-seller-1637307127.jpg"
+                      alt=""
+                    />
+                    <div class="tag-container">
+                      <div class="d-flex tag-wrapper" style="min-height: 15px">
+                        <div
+                          class="d-flex align-items-center tag-row p-tag"
+                          style="background: rgba(82, 82, 82, 0.8)"
+                        >
+                          <span class="plp" style="color: rgb(255, 255, 255)">DEGITAL PRINT</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex pt-2">
+                      <div class="price me-2"><span>₹</span>526</div>
+                      <div class="actialPrice text-decoration-line-through fw-light text-muted">
+                        <span>₹152</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="" class="swiper-slide position-relative">
+                  <div class="innerPart">
+                    <img
+                      src="https://images.bewakoof.com/uploads/grid/app/vote-for-design-1641715844.jpg"
+                      alt=""
+                    />
+                    <div class="tag-container">
+                      <div class="d-flex tag-wrapper" style="min-height: 15px">
+                        <div
+                          class="d-flex align-items-center tag-row p-tag"
+                          style="background: rgba(82, 82, 82, 0.8)"
+                        >
+                          <span class="plp" style="color: rgb(255, 255, 255)">DEGITAL PRINT</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex pt-2">
+                      <div class="price me-2"><span>₹</span>526</div>
+                      <div class="actialPrice text-decoration-line-through fw-light text-muted">
+                        <span>₹152</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="" class="swiper-slide position-relative">
+                  <div class="innerPart">
+                    <img
+                      src="https://images.bewakoof.com/uploads/grid/app/tod-thumbnail-new-arrival-1637307130.jpg"
+                      alt=""
+                    />
+                    <div class="tag-container">
+                      <div class="d-flex tag-wrapper" style="min-height: 15px">
+                        <div
+                          class="d-flex align-items-center tag-row p-tag"
+                          style="background: rgba(82, 82, 82, 0.8)"
+                        >
+                          <span class="plp" style="color: rgb(255, 255, 255)">DEGITAL PRINT</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex pt-2">
+                      <div class="price me-2"><span>₹</span>526</div>
+                      <div class="actialPrice text-decoration-line-through fw-light text-muted">
+                        <span>₹152</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="" class="swiper-slide position-relative">
+                  <div class="innerPart">
+                    <img
+                      src="https://images.bewakoof.com/uploads/grid/app/new-tod-thumbnail-cosmos-1--1--1640666014.jpg"
+                      alt=""
+                    />
+                    <div class="tag-container">
+                      <div class="d-flex tag-wrapper" style="min-height: 15px">
+                        <div
+                          class="d-flex align-items-center tag-row p-tag"
+                          style="background: rgba(82, 82, 82, 0.8)"
+                        >
+                          <span class="plp" style="color: rgb(255, 255, 255)">DEGITAL PRINT</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex pt-2">
+                      <div class="price me-2"><span>₹</span>526</div>
+                      <div class="actialPrice text-decoration-line-through fw-light text-muted">
+                        <span>₹152</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="" class="swiper-slide position-relative">
+                  <div class="innerPart">
+                    <img
+                      src="https://images.bewakoof.com/uploads/grid/app/tod-thumbnail-plus-size-1637307128.jpg"
+                      alt=""
+                    />
+                    <div class="tag-container">
+                      <div class="d-flex tag-wrapper" style="min-height: 15px">
+                        <div
+                          class="d-flex align-items-center tag-row p-tag"
+                          style="background: rgba(82, 82, 82, 0.8)"
+                        >
+                          <span class="plp" style="color: rgb(255, 255, 255)">DEGITAL PRINT</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex pt-2">
+                      <div class="price me-2"><span>₹</span>526</div>
+                      <div class="actialPrice text-decoration-line-through fw-light text-muted">
+                        <span>₹152</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="" class="swiper-slide position-relative">
+                  <div class="innerPart">
+                    <img
+                      src="https://images.bewakoof.com/uploads/grid/app/last-sizes-left-1639915515.jpg"
+                      alt=""
+                    />
+                    <div class="tag-container">
+                      <div class="d-flex tag-wrapper" style="min-height: 15px">
+                        <div
+                          class="d-flex align-items-center tag-row p-tag"
+                          style="background: rgba(82, 82, 82, 0.8)"
+                        >
+                          <span class="plp" style="color: rgb(255, 255, 255)">DEGITAL PRINT</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex pt-2">
+                      <div class="price me-2"><span>₹</span>526</div>
+                      <div class="actialPrice text-decoration-line-through fw-light text-muted">
+                        <span>₹152</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="" class="swiper-slide position-relative">
+                  <div class="innerPart">
+                    <img
+                      src="https://images.bewakoof.com/uploads/grid/app/tod-thumbnail-essentials-1637307130.jpg"
+                      alt=""
+                    />
+                    <div class="tag-container">
+                      <div class="d-flex tag-wrapper" style="min-height: 15px">
+                        <div
+                          class="d-flex align-items-center tag-row p-tag"
+                          style="background: rgba(82, 82, 82, 0.8)"
+                        >
+                          <span class="plp" style="color: rgb(255, 255, 255)">DEGITAL PRINT</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex pt-2">
+                      <div class="price me-2"><span>₹</span>526</div>
+                      <div class="actialPrice text-decoration-line-through fw-light text-muted">
+                        <span>₹152</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="" style="margin: 0px auto; text-align: center; padding: 0px 6px">
+        <a href="" id="main-view-all"> VIEW ALL </a>
+      </div>
+    </section>
+    <!-- middle page Three Slider -->
+    <header class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="">
+            <div class="swiper focusSlider">
+              <div class="swiper-wrapper main-slider">
+                <a class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1x1-just-arrived-women-1654276552.gif"
+                    alt=""
+                /></a>
+                <a class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1x1-just-arrived-women-1654276552.gif"
+                    alt=""
+                /></a>
+                <a class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1x1-just-arrived-women-1654276552.gif"
+                    alt=""
+                /></a>
+                <a class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1x1-just-arrived-women-1654276552.gif"
+                    alt=""
+                /></a>
+                <a class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1x1-just-arrived-women-1654276552.gif"
+                    alt=""
+                /></a>
+                <a class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1x1-just-arrived-women-1654276552.gif"
+                    alt=""
+                /></a>
+                <a class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1x1-just-arrived-women-1654276552.gif"
+                    alt=""
+                /></a>
+                <a class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1x1-just-arrived-women-1654276552.gif"
+                    alt=""
+                /></a>
+                <a class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1x1-just-arrived-women-1654276552.gif"
+                    alt=""
+                /></a>
+                <a class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1x1-just-arrived-women-1654276552.gif"
+                    alt=""
+                /></a>
+                <a class="swiper-slide"
+                  ><img
+                    src="https://images.bewakoof.com/uploads/grid/app/1x1-just-arrived-women-1654276552.gif"
+                    alt=""
+                /></a>
+              </div>
+              <div class="swiper-pagination d-none d-md-block"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- <header class="shadow-sm p-4"> -->
+    <!-- Your Content Here -->
+    <!-- <div class="container">
         <div class="d-flex justify-content-evenly" style="height: 60vh">
           <div class="card position-relative">
             <img
@@ -270,7 +873,7 @@
             <img
               src="assets/img/girl.jpg"
               alt="Girl image"
-              class="img-fluid"
+              class="card-img"
               style="width: 100%; height: 100%; object-fit: cover"
             />
             <button
@@ -297,11 +900,138 @@
       <br />
       <br />
       <br />
-    </section>
-    <footer class="fixed-bottom bg-dark text-white text-center">
-      @copyrights name
-    </footer>
+    </header> -->
+
+    <footer class="sticky-top bg-dark text-white text-center">@copyrights name</footer>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+      });
+      var swiperOne = new Swiper('.focusSlider', {
+        slidesPerView: 3,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          200: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          500: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+      var swiperTwo = new Swiper('.swiperSecTwo', {
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          200: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          500: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 9,
+            spaceBetween: 30,
+          },
+        },
+      });
+      var swiperThree = new Swiper('.bestSellerSlider', {
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          200: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          500: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+          },
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js';
+      import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js';
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: 'AIzaSyDA46QqJLjN9W1_kvHuSzWaZaYUmRgpje0',
+        authDomain: 'unknown-r007.firebaseapp.com',
+        projectId: 'unknown-r007',
+        storageBucket: 'unknown-r007.appspot.com',
+        messagingSenderId: '845666848776',
+        appId: '1:845666848776:web:86964e02754c4c9b9e41bd',
+        measurementId: 'G-LBN6SSM9FK',
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
 </html>
