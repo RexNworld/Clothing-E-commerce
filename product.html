@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,200;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="sticky-top">
+      <nav class="bg-light d-none d-md-block">
+        <div class="container">
+          <div class="d-flex justify-content-between">
+            <div class="nav-color nav-font">
+              <a href="product_single.html" class="text-reset text-decoration-none fst-italic p-2"
+                >Facebook</a
+              >
+              <a href="product_single.html" class="text-reset text-decoration-none fst-italic p-2"
+                >Twitter</a
+              >
+              <a href="product_single.html" class="text-reset text-decoration-none fst-italic p-2"
+                >Instagram</a
+              >
+              <a href="product_single.html" class="text-reset text-decoration-none fst-italic p-2"
+                >Youtube</a
+              >
+            </div>
+            <div class="nav-color">
+              <a href="product_single.html" class="text-reset text-decoration-none fst-italic p-2"
+                >Track Order</a
+              >
+              <div class="vr bg-theme"></div>
+              <a href="product_single.html" class="text-reset text-decoration-none fst-italic p-2"
+                >Download App</a
+              >
+              <div class="vr bg-theme"></div>
+              <a href="product_single.html" class="text-reset text-decoration-none fst-italic p-2"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+          <button
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler border-0 d-md-none"
+          >
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+
+          <a href="index.html" class="navbar-brand brand-style"
+            ><img
+              src="assets/img/logo.png"
+              alt="e-commerce"
+              height="30"
+              srcset=""
+              class="d-inline-block align-text-top logo-navbar" /></a
+          ><a
+            class="text-decoration-none text-uppercase text-center mx-2"
+            aria-current="page"
+            href="#"
+            >Man</a
+          >
+          <a
+            class="text-decoration-none text-uppercase text-center mx-2"
+            aria-current="page"
+            href="#"
+            >Women</a
+          >
+          <a
+            class="text-decoration-none text-uppercase text-center mx-2"
+            aria-current="page"
+            href="#"
+            >Kids</a
+          >
+
+          <ul class="navbar-nav d-md-none">
+            <li class="nav-item">
+              <a class="btn" href="#">
+                <span class="btn-link"><i class="fa fa-search" style="font-size: 20px"></i> </span>
+              </a>
+              <a class="btn" href="#">
+                <span class="position-relative"
+                  ><i class="fa fa-heart" style="font-size: 20px"></i>
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+                    style="font-size: 10px"
+                    >9</span
+                  ></span
+                >
+              </a>
+              <a class="btn" href="cart-page.html">
+                <span class="position-relative"
+                  ><i class="fa fa-shopping-cart" style="font-size: 20px"></i>
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+                    style="font-size: 10px"
+                    >9</span
+                  ></span
+                >
+              </a>
+            </li>
+          </ul>
+          <!-- Search Bar -->
+          <div class="collapse navbar-collapse">
+            <div class="ms-auto">
+              <div class="input-group">
+                <span class="input-group-text dropdown-toggle"
+                  ><i class="fa fa-map-marker" aria-hidden="true">&nbsp;&nbsp;West Bengal</i>
+                </span>
+                <div class="vr"></div>
+                <input
+                  class="form-control"
+                  type="search"
+                  placeholder="Search for products..."
+                  aria-label="Search"
+                />
+              </div>
+            </div>
+            <div class="me-0 m-2 vr"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="btn" href="#">
+                  <span class="position-relative btn-link me-2" style="text-decoration: none"
+                    ><i class="fa fa-heart" style="font-size: 20px"></i
+                    ><span
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+                      style="font-size: 10px"
+                      >9</span
+                    ></span
+                  >
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn" href="cart-page.html">
+                  <span class="position-relative btn-link me-2"
+                    ><i class="fa fa-shopping-cart" style="font-size: 20px"></i
+                    ><span
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+                      style="font-size: 10px"
+                      >9</span
+                    ></span
+                  >
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn" href="login.html">
+                  <span class="btn-link me-2"
+                    ><i class="fa fa-user" style="font-size: 20px"></i
+                  ></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- The sidebar for Mobile Phones -->
+    <div
+      class="offcanvas offcanvas-start"
+      style="width: 270px"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          <!-- {% isAuth query if true%} -->
+          <!-- Hello name -->
+          <!-- {% else %} -->
+          Welcome Guest
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <!-- {% isAuth query if true%} -->
+        <div class="border-bottom p-2 mx-4 d-flex justify-content-evenly">
+          <a href="product_single.html" class="text-decoration-none">Login</a>/<a
+            href=" "
+            class="text-decoration-none"
+            >Sign up</a
+          >
+        </div>
+        <!-- {% else %} -->
+        <ul class="navbar-nav p-4">
+          <p class="text-uppercase fw-bold text-muted text-light border-bottom m-0">Menu</p>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Man</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Women</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Accessories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Customise products</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav bg-light p-4">
+          <p class="text-uppercase fw-bold text-muted text-light border-bottom m-0">Profile</p>
+          <li class="nav-item col">
+            <a class="nav-link" aria-current="page" href="#">Profile</a>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link" aria-current="page" href="#">Women</a>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link" aria-current="page" href="#">Accessories</a>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link" aria-current="page" href="#">Customise products</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Breadcam -->
+    <div class="container">
+      <nav aria-label="breadcrumb" class="p-3">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item text-dark">
+            <a href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item text-dark">
+            <a href="#">Library</a>
+          </li>
+          <li class="breadcrumb-item text-darkactive" aria-current="page">Data</li>
+        </ol>
+      </nav>
+    </div>
+    <!-- Header -->
+    <div class="container">
+      <div class="mainHeading">
+        <div class="headingInner">
+          <h1>
+            Track Pants & Joggers for men
+            <span class="">(600)</span>
+          </h1>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <div class="p-4"></div>
+    <div class="container">
+      <div
+        class="row wrap"
+        id="wrap"
+        style="max-height: 100%; position: relative; min-height: 484.2px"
+      >
+        <div class="col-md-3 product-sidebar d-none d-md-block">
+          <div class="sticky">
+            <div class="box">
+              <div class="filterHeading">
+                <h4>FILTERS</h4>
+              </div>
+              <div class="row w-100 m-0">
+                <button
+                  class="m-0 d-flex justify-content-between"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#categoryCollapse"
+                  aria-expanded="false"
+                  aria-controls="categoryCollapse"
+                >
+                  <span>Categories</span><i class="fa fa-angle-down" aria-hidden="true"></i>
+                </button>
+                <div class="collapse" id="categoryCollapse">
+                  <ul class="p-0">
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href=""
+                        >sweatshirt</a
+                      >
+                    </li>
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href="">Paijama</a>
+                    </li>
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href="">Hoodies</a>
+                    </li>
+                  </ul>
+                </div>
+                <button
+                  class="m-0 d-flex justify-content-between"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#sizesCollapse"
+                  aria-expanded="false"
+                  aria-controls="sizesCollapse"
+                >
+                  <span>Sizes</span><i class="fa fa-angle-down" aria-hidden="true"></i>
+                </button>
+                <div class="collapse" id="sizesCollapse">
+                  <ul class="p-0">
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href="">S</a>
+                    </li>
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href="">M</a>
+                    </li>
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href="">L</a>
+                    </li>
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href="">XL</a>
+                    </li>
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href="">1XL</a>
+                    </li>
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href="">2XL</a>
+                    </li>
+                  </ul>
+                </div>
+                <button
+                  class="m-0 d-flex justify-content-between"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#brandCollapse"
+                  aria-expanded="false"
+                  aria-controls="brandCollapse"
+                >
+                  <span>Brand</span><i class="fa fa-angle-down" aria-hidden="true"></i>
+                </button>
+                <div class="collapse" id="brandCollapse">
+                  <ul class="p-0">
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href="">bewakoof</a>
+                    </li>
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href="">Redwolf</a>
+                    </li>
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href=""
+                        >Brown mocha</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <button
+                  class="m-0 d-flex justify-content-between"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#colorCollapse"
+                  aria-expanded="false"
+                  aria-controls="colorCollapse"
+                >
+                  <span>Color</span><i class="fa fa-angle-down" aria-hidden="true"></i>
+                </button>
+                <div class="collapse" id="colorCollapse">
+                  <ul class="p-0">
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href=""
+                        >sweatshirt</a
+                      >
+                    </li>
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href="">Paijama</a>
+                    </li>
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href="">Hoodies</a>
+                    </li>
+                  </ul>
+                </div>
+                <button
+                  class="m-0 d-flex justify-content-between"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#designCollapse"
+                  aria-expanded="false"
+                  aria-controls="designCollapse"
+                >
+                  <span>Design</span><i class="fa fa-angle-down" aria-hidden="true"></i>
+                </button>
+                <div class="collapse" id="designCollapse">
+                  <ul class="p-0">
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href="">Solid</a>
+                    </li>
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href="">Paint</a>
+                    </li>
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href="">Printed</a>
+                    </li>
+                  </ul>
+                </div>
+                <button
+                  class="m-0 d-flex justify-content-between"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#offersCollapse"
+                  aria-expanded="false"
+                  aria-controls="offersCollapse"
+                >
+                  <span>Offers</span><i class="fa fa-angle-down" aria-hidden="true"></i>
+                </button>
+                <div class="collapse" id="offersCollapse">
+                  <ul class="p-0">
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href=""
+                        >Bue 1 Get 1</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <button
+                  class="m-0 d-flex justify-content-between"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#duscountCollapse"
+                  aria-expanded="false"
+                  aria-controls="duscountCollapse"
+                >
+                  <span>Discounts</span><i class="fa fa-angle-down" aria-hidden="true"></i>
+                </button>
+                <div class="collapse" id="duscountCollapse">
+                  <ul class="p-0">
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href="">10% More</a>
+                    </li>
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href="">20% More</a>
+                    </li>
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href="">30% More</a>
+                    </li>
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href="">40% More</a>
+                    </li>
+                    <li class="listType">
+                      <a class="m-0 w-100 p-1 collapseBtn" aria-current="false" href="">50% More</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p>
+                <button class="btn btn-primary" type="button">Button with data-bs-target</button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-9 offset-md-3">
+          <!-- <div class="col-sm-12 col-md-12"> -->
+          <!-- <div class="shortingHeading">
+            <select name="" id="sortPrice" onchange="sort()">
+              <option value="popular">Sort By: Popular</option>
+              <option value="new">New</option>
+              <option value="high">Price :High to Low</option>
+              <option value="low">Price :Low to High</option>
+            </select>
+          </div> -->
+          <div class="container p-0">
+            <div class="row" id="produc-listng">
+              <div class="col-6 col-sm-4 p-2">
+                <a href="/product_single.html"
+                  ><div class="productCardBox">
+                    <div class="productCardImg false">
+                      <div
+                        class="productImg"
+                        style="width: 100%; position: relative; background: rgb(248, 249, 249)"
+                      >
+                        <img src="assets/productList/1.jpg" alt="" width="100%" height="100%" />
+                      </div>
+                      <div class="productCardDetail">
+                        <div class="d-flex">
+                          <div class="productNaming bkf-ellipsis">
+                            <h3 class="brand-name">Bewakoof</h3>
+                            <div class="clr-shade4 h3-p-name">
+                              Customizable Men's White Round Neck T-Shirt
+                            </div>
+                          </div>
+                        </div>
+                        <div class="productPriceBox d-flex align-items-end">
+                          <div class="discountedPriceText clr-p-black"><span>₹</span>499</div>
+                          <div class="actualPriceText clr-shade5">₹830</div>
+                          <span class="sellingFastBox"></span>
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between loyalty-stock-wrap"
+                        >
+                          <div class="loyaltyPriceBox" style="width: unset">
+                            <h6><b>₹449</b>For TriBe Members</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6 col-sm-4 p-2">
+                <a href="/product_single.html"
+                  ><div class="productCardBox">
+                    <div class="productCardImg false">
+                      <div
+                        class="productImg"
+                        style="width: 100%; position: relative; background: rgb(248, 249, 249)"
+                      >
+                        <img src="assets/productList/2.jpg" alt="" width="100%" height="100%" />
+                      </div>
+                      <div class="productCardDetail">
+                        <div class="d-flex">
+                          <div class="productNaming bkf-ellipsis">
+                            <h3 class="brand-name">Bewakoof</h3>
+                            <div class="clr-shade4 h3-p-name">
+                              Customizable Men's White Round Neck T-Shirt
+                            </div>
+                          </div>
+                        </div>
+                        <div class="productPriceBox d-flex align-items-end">
+                          <div class="discountedPriceText clr-p-black"><span>₹</span>499</div>
+                          <div class="actualPriceText clr-shade5">₹830</div>
+                          <span class="sellingFastBox"></span>
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between loyalty-stock-wrap"
+                        >
+                          <div class="loyaltyPriceBox" style="width: unset">
+                            <h6><b>₹449</b>For TriBe Members</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6 col-sm-4 p-2">
+                <a href="/product_single.html"
+                  ><div class="productCardBox">
+                    <div class="productCardImg false">
+                      <div
+                        class="productImg"
+                        style="width: 100%; position: relative; background: rgb(248, 249, 249)"
+                      >
+                        <img src="assets/productList/3.jpg" alt="" width="100%" height="100%" />
+                      </div>
+                      <div class="productCardDetail">
+                        <div class="d-flex">
+                          <div class="productNaming bkf-ellipsis">
+                            <h3 class="brand-name">Bewakoof</h3>
+                            <div class="clr-shade4 h3-p-name">
+                              Customizable Men's White Round Neck T-Shirt
+                            </div>
+                          </div>
+                        </div>
+                        <div class="productPriceBox d-flex align-items-end">
+                          <div class="discountedPriceText clr-p-black"><span>₹</span>499</div>
+                          <div class="actualPriceText clr-shade5">₹830</div>
+                          <span class="sellingFastBox"></span>
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between loyalty-stock-wrap"
+                        >
+                          <div class="loyaltyPriceBox" style="width: unset">
+                            <h6><b>₹449</b>For TriBe Members</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6 col-sm-4 p-2">
+                <a href="/product_single.html"
+                  ><div class="productCardBox">
+                    <div class="productCardImg false">
+                      <div
+                        class="productImg"
+                        style="width: 100%; position: relative; background: rgb(248, 249, 249)"
+                      >
+                        <img src="assets/productList/4.jpg" alt="" width="100%" height="100%" />
+                      </div>
+                      <div class="productCardDetail">
+                        <div class="d-flex">
+                          <div class="productNaming bkf-ellipsis">
+                            <h3 class="brand-name">Bewakoof</h3>
+                            <div class="clr-shade4 h3-p-name">
+                              Customizable Men's White Round Neck T-Shirt
+                            </div>
+                          </div>
+                        </div>
+                        <div class="productPriceBox d-flex align-items-end">
+                          <div class="discountedPriceText clr-p-black"><span>₹</span>499</div>
+                          <div class="actualPriceText clr-shade5">₹830</div>
+                          <span class="sellingFastBox"></span>
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between loyalty-stock-wrap"
+                        >
+                          <div class="loyaltyPriceBox" style="width: unset">
+                            <h6><b>₹449</b>For TriBe Members</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6 col-sm-4 p-2">
+                <a href="/product_single.html"
+                  ><div class="productCardBox">
+                    <div class="productCardImg false">
+                      <div
+                        class="productImg"
+                        style="width: 100%; position: relative; background: rgb(248, 249, 249)"
+                      >
+                        <img src="assets/productList/5.jpg" alt="" width="100%" height="100%" />
+                      </div>
+                      <div class="productCardDetail">
+                        <div class="d-flex">
+                          <div class="productNaming bkf-ellipsis">
+                            <h3 class="brand-name">Bewakoof</h3>
+                            <div class="clr-shade4 h3-p-name">
+                              Customizable Men's White Round Neck T-Shirt
+                            </div>
+                          </div>
+                        </div>
+                        <div class="productPriceBox d-flex align-items-end">
+                          <div class="discountedPriceText clr-p-black"><span>₹</span>499</div>
+                          <div class="actualPriceText clr-shade5">₹830</div>
+                          <span class="sellingFastBox"></span>
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between loyalty-stock-wrap"
+                        >
+                          <div class="loyaltyPriceBox" style="width: unset">
+                            <h6><b>₹449</b>For TriBe Members</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6 col-sm-4 p-2">
+                <a href="/product_single.html"
+                  ><div class="productCardBox">
+                    <div class="productCardImg false">
+                      <div
+                        class="productImg"
+                        style="width: 100%; position: relative; background: rgb(248, 249, 249)"
+                      >
+                        <img src="assets/productList/6.jpg" alt="" width="100%" height="100%" />
+                      </div>
+                      <div class="productCardDetail">
+                        <div class="d-flex">
+                          <div class="productNaming bkf-ellipsis">
+                            <h3 class="brand-name">Bewakoof</h3>
+                            <div class="clr-shade4 h3-p-name">
+                              Customizable Men's White Round Neck T-Shirt
+                            </div>
+                          </div>
+                        </div>
+                        <div class="productPriceBox d-flex align-items-end">
+                          <div class="discountedPriceText clr-p-black"><span>₹</span>499</div>
+                          <div class="actualPriceText clr-shade5">₹830</div>
+                          <span class="sellingFastBox"></span>
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between loyalty-stock-wrap"
+                        >
+                          <div class="loyaltyPriceBox" style="width: unset">
+                            <h6><b>₹449</b>For TriBe Members</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6 col-sm-4 p-2">
+                <a href="/product_single.html"
+                  ><div class="productCardBox">
+                    <div class="productCardImg false">
+                      <div
+                        class="productImg"
+                        style="width: 100%; position: relative; background: rgb(248, 249, 249)"
+                      >
+                        <img src="assets/productList/7.jpg" alt="" width="100%" height="100%" />
+                      </div>
+                      <div class="productCardDetail">
+                        <div class="d-flex">
+                          <div class="productNaming bkf-ellipsis">
+                            <h3 class="brand-name">Bewakoof</h3>
+                            <div class="clr-shade4 h3-p-name">
+                              Customizable Men's White Round Neck T-Shirt
+                            </div>
+                          </div>
+                        </div>
+                        <div class="productPriceBox d-flex align-items-end">
+                          <div class="discountedPriceText clr-p-black"><span>₹</span>499</div>
+                          <div class="actualPriceText clr-shade5">₹830</div>
+                          <span class="sellingFastBox"></span>
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between loyalty-stock-wrap"
+                        >
+                          <div class="loyaltyPriceBox" style="width: unset">
+                            <h6><b>₹449</b>For TriBe Members</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6 col-sm-4 p-2">
+                <a href="/product_single.html"
+                  ><div class="productCardBox">
+                    <div class="productCardImg false">
+                      <div
+                        class="productImg"
+                        style="width: 100%; position: relative; background: rgb(248, 249, 249)"
+                      >
+                        <img src="assets/productList/8.jpg" alt="" width="100%" height="100%" />
+                      </div>
+                      <div class="productCardDetail">
+                        <div class="d-flex">
+                          <div class="productNaming bkf-ellipsis">
+                            <h3 class="brand-name">Bewakoof</h3>
+                            <div class="clr-shade4 h3-p-name">
+                              Customizable Men's White Round Neck T-Shirt
+                            </div>
+                          </div>
+                        </div>
+                        <div class="productPriceBox d-flex align-items-end">
+                          <div class="discountedPriceText clr-p-black"><span>₹</span>499</div>
+                          <div class="actualPriceText clr-shade5">₹830</div>
+                          <span class="sellingFastBox"></span>
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between loyalty-stock-wrap"
+                        >
+                          <div class="loyaltyPriceBox" style="width: unset">
+                            <h6><b>₹449</b>For TriBe Members</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6 col-sm-4 p-2">
+                <a href="/product_single.html"
+                  ><div class="productCardBox">
+                    <div class="productCardImg false">
+                      <div
+                        class="productImg"
+                        style="width: 100%; position: relative; background: rgb(248, 249, 249)"
+                      >
+                        <img src="assets/productList/9.jpg" alt="" width="100%" height="100%" />
+                      </div>
+                      <div class="productCardDetail">
+                        <div class="d-flex">
+                          <div class="productNaming bkf-ellipsis">
+                            <h3 class="brand-name">Bewakoof</h3>
+                            <div class="clr-shade4 h3-p-name">
+                              Customizable Men's White Round Neck T-Shirt
+                            </div>
+                          </div>
+                        </div>
+                        <div class="productPriceBox d-flex align-items-end">
+                          <div class="discountedPriceText clr-p-black"><span>₹</span>499</div>
+                          <div class="actualPriceText clr-shade5">₹830</div>
+                          <span class="sellingFastBox"></span>
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between loyalty-stock-wrap"
+                        >
+                          <div class="loyaltyPriceBox" style="width: unset">
+                            <h6><b>₹449</b>For TriBe Members</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-6 col-sm-4 p-2">
+                <a href="/product_single.html"
+                  ><div class="productCardBox">
+                    <div class="productCardImg false">
+                      <div
+                        class="productImg"
+                        style="width: 100%; position: relative; background: rgb(248, 249, 249)"
+                      >
+                        <img src="assets/productList/1.jpg" alt="" width="100%" height="100%" />
+                      </div>
+                      <div class="productCardDetail">
+                        <div class="d-flex">
+                          <div class="productNaming bkf-ellipsis">
+                            <h3 class="brand-name">Bewakoof</h3>
+                            <div class="clr-shade4 h3-p-name">
+                              Customizable Men's White Round Neck T-Shirt
+                            </div>
+                          </div>
+                        </div>
+                        <div class="productPriceBox d-flex align-items-end">
+                          <div class="discountedPriceText clr-p-black"><span>₹</span>499</div>
+                          <div class="actualPriceText clr-shade5">₹830</div>
+                          <span class="sellingFastBox"></span>
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between loyalty-stock-wrap"
+                        >
+                          <div class="loyaltyPriceBox" style="width: unset">
+                            <h6><b>₹449</b>For TriBe Members</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6 col-sm-4 p-2">
+                <a href="/product_single.html"
+                  ><div class="productCardBox">
+                    <div class="productCardImg false">
+                      <div
+                        class="productImg"
+                        style="width: 100%; position: relative; background: rgb(248, 249, 249)"
+                      >
+                        <img src="assets/productList/2.jpg" alt="" width="100%" height="100%" />
+                      </div>
+                      <div class="productCardDetail">
+                        <div class="d-flex">
+                          <div class="productNaming bkf-ellipsis">
+                            <h3 class="brand-name">Bewakoof</h3>
+                            <div class="clr-shade4 h3-p-name">
+                              Customizable Men's White Round Neck T-Shirt
+                            </div>
+                          </div>
+                        </div>
+                        <div class="productPriceBox d-flex align-items-end">
+                          <div class="discountedPriceText clr-p-black"><span>₹</span>499</div>
+                          <div class="actualPriceText clr-shade5">₹830</div>
+                          <span class="sellingFastBox"></span>
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between loyalty-stock-wrap"
+                        >
+                          <div class="loyaltyPriceBox" style="width: unset">
+                            <h6><b>₹449</b>For TriBe Members</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section part -->
+
+    <footer class="footerdiv py-4">
+      <div class="container">
+        <div class="row pt-4">
+          <div class="col-xs-12">
+            <a href="index.html" class="navbar-brand brand-style"
+              ><img
+                src="assets/img/logo.png"
+                alt="e-Pharmacy"
+                height="50"
+                srcset=""
+                class="d-inline-block align-text-top logo-navbar"
+            /></a>
+          </div>
+        </div>
+        <div class="row footer p-4">
+          <div class="col-sm-6 col-md-3">
+            <span>Customer Service</span>
+            <ul>
+              <li>Contact Us</li>
+              <li>Track Order</li>
+              <li>Cancle</li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <span>Company</span>
+            <ul>
+              <li>About Us</li>
+              <li>We are Hiring</li>
+              <li>Terms and conditons</li>
+              <li>Privecy Policy</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <span>Contact With Us</span>
+            <ul>
+              <li>Facebook likes</li>
+              <li>Followers</li>
+              <li>Cancle Order</li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <span>Keep Up To Date</span>
+            <ul>
+              <li>Contact Us</li>
+              <li>Track Order</li>
+              <li>Cancle Order</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/swiper/swiper-bundle.min.js"></script>
+    <script>
+      // var swiper = new Swiper('.mySwiper', {
+      //   slidesPerView: 1,
+      //   spaceBetween: 30,
+      //   loop: true,
+      // });
+    </script>
+  </body>
+</html>

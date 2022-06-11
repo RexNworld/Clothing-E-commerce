@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/productList/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="bg-dark p-2 d-none d-md-block">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <div class="nav-color">
+            <a href="" class="text-reset text-decoration-none fst-italic">Free Shipping</a>
+            <div class="vr text-white"></div>
+            <a href="" class="text-reset text-decoration-none fst-italic">Download App</a>
+          </div>
+          <div class="nav-color">
+            <a href="" class="text-reset text-decoration-none fst-italic">Contact Us</a>
+            <div class="vr text-white"></div>
+            <a href="" class="text-reset text-decoration-none fst-italic">Help</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar sticky-top navbar-expand-lg bg-white shadow-sm">
+      <div class="container">
+        <button
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          class="navbar-toggler border-0 d-md-none"
+        >
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <a href="/" class="navbar-brand brand-style"
+          ><img
+            src="assets/img/logo.png"
+            alt="e-Pharmacy"
+            height="30"
+            srcset=""
+            class="d-inline-block align-text-top logo-navbar"
+        /></a>
+
+        <ul class="navbar-nav d-md-none">
+          <li class="nav-item">
+            <a class="btn" href="#">
+              <span class="btn-link"><i class="fa fa-search" style="font-size: 20px"></i> </span>
+            </a>
+            <a class="btn" href="#">
+              <span class="position-relative"
+                ><i class="fa fa-heart" style="font-size: 20px"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+                  style="font-size: 10px"
+                  >9</span
+                ></span
+              >
+            </a>
+            <a class="btn" href="#">
+              <span class="position-relative"
+                ><i class="fa fa-shopping-cart" style="font-size: 20px"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+                  style="font-size: 10px"
+                  >9</span
+                ></span
+              >
+            </a>
+          </li>
+        </ul>
+        <!-- Search Bar -->
+        <div class="collapse navbar-collapse">
+          <div class="ms-auto">
+            <div class="input-group">
+              <span class="input-group-text dropdown-toggle"
+                ><i class="fa fa-map-marker" aria-hidden="true"> Kolkata</i>
+              </span>
+              <div class="vr"></div>
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search for products..."
+                aria-label="Search"
+              />
+            </div>
+          </div>
+          <div class="me-0 m-2 vr"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="btn" href="#">
+                <span class="position-relative btn-link me-2" style="text-decoration: none"
+                  ><i class="fa fa-heart" style="font-size: 20px"></i
+                  ><span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+                    style="font-size: 10px"
+                    >9</span
+                  ></span
+                >
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="btn" href="#">
+                <span class="position-relative btn-link me-2"
+                  ><i class="fa fa-shopping-cart" style="font-size: 20px"></i
+                  ><span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+                    style="font-size: 10px"
+                    >9</span
+                  ></span
+                >
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="btn" href="#">
+                <span class="btn-link me-2"
+                  ><i class="fa fa-user" style="font-size: 20px"></i
+                ></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Responsve -->
+    <div class="container-fluid bg-white d-none d-md-block p-2">
+      <div class="header-nav d-flex justify-content-center">
+        <a class="text-decoration-none text-uppercase text-center mx-2" aria-current="page" href="#"
+          >Man</a
+        >
+        <a class="text-decoration-none text-uppercase text-center mx-2" aria-current="page" href="#"
+          >Women</a
+        >
+        <a class="text-decoration-none text-uppercase text-center mx-2" aria-current="page" href="#"
+          >Kids</a
+        >
+      </div>
+    </div>
+
+    <!-- The sidebar for Mobile Phones -->
+    <div
+      class="offcanvas offcanvas-start"
+      style="width: 270px"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          <!-- {% isAuth query if true%} -->
+          <!-- Hello name -->
+          <!-- {% else %} -->
+          Welcome Guest
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <!-- {% isAuth query if true%} -->
+        <div class="border-bottom p-2 mx-4 d-flex justify-content-evenly">
+          <a href="" class="text-decoration-none">Login</a>/<a href=" " class="text-decoration-none"
+            >Sign up</a
+          >
+        </div>
+        <!-- {% else %} -->
+        <ul class="navbar-nav p-4">
+          <p class="text-uppercase fw-bold text-muted text-light border-bottom m-0">Menu</p>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Man</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Women</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Accessories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Customise products</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav bg-light p-4">
+          <p class="text-uppercase fw-bold text-muted text-light border-bottom m-0">Profile</p>
+          <li class="nav-item col">
+            <a class="nav-link" aria-current="page" href="#">Profile</a>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link" aria-current="page" href="#">Women</a>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link" aria-current="page" href="#">Accessories</a>
+          </li>
+          <li class="nav-item col">
+            <a class="nav-link" aria-current="page" href="#">Customise products</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- section part -->
+    <div class="container">
+      <div class="mainHeading">
+        <div class="headingInner">
+          <h1>My Profile</h1>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <div class="p-4"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-5">
+          <form action="">
+            <form name="profileForm" class="accProfileForm" autocomplete="off" novalidate="">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 noPd">
+                  <div class="inputgroup">
+                    <input type="text" name="fname" maxlength="71" value="Reshav" /><span
+                      class="bar"
+                    ></span
+                    ><label>First Name</label>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 noPdRight noPdXs">
+                  <div class="inputgroup">
+                    <input type="text" name="lname" /><span class="bar"></span
+                    ><label>Last Name</label><span class="msgs visible-xs"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="inputgroup">
+                <input type="email" name="email" readonly="" value="rexnworld@gmail.com" /><span
+                  class="bar"
+                ></span
+                ><label for="email">Email Id</label>
+              </div>
+              <div class="col-xs-12 col-sm-6 noPd">
+                <div class="inputgroup" style="margin-bottom: 60px">
+                  <input readonly="" value="******" style="letter-spacing: 2px" /><span
+                    class="bar"
+                  ></span
+                  ><label>Password</label
+                  ><a class="inputHelp" aria-current="false" href="#ChangePassword"
+                    >Change Password</a
+                  >
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 noPd clearLeft">
+                <div class="inputgroup verifyPhoneInput veryfyMobileOuter">
+                  <input
+                    type="tel"
+                    name="mobile"
+                    maxlength="10"
+                    readonly=""
+                    value="9614464595"
+                  /><span class="bar"></span><span class="countryCode">+91<span>|</span></span
+                  ><label for="mobile">Phone Number</label>
+                  <div class="verifyMobileBox veryfyMobile">
+                    <p><i class="fa fa-check text-white" aria-hidden="true"></i></p>
+                  </div>
+                  <div class="inputHelp" style="cursor: pointer">Change Mobile Number</div>
+                </div>
+              </div>
+              <div class="inputgroup" style="margin-bottom: 60px">
+                <input
+                  class=""
+                  type="date"
+                  name="date_of_birth"
+                  id="DD/MM/YYYY"
+                  value=""
+                  style="
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    white-space: nowrap;
+                    height: 25px;
+                  "
+                /><span class="bar"></span
+                ><span class="msgs"
+                  ><div style="margin-bottom: 10px">
+                    <span
+                      class="msgs"
+                      style="white-space: pre-wrap; position: unset; font-size: 10px"
+                      >Share your DOB to get special gifts or offers on your special day</span
+                    >
+                  </div></span
+                >
+              </div>
+              <div class="genderTabBox clearfix">
+                <span class="addrTypeTitle">Gender</span>
+                <div class="addrTypeList">
+                  <div class="addrSubType">
+                    <input type="radio" name="gender" id="male" value="male" /><label
+                      for="male"
+                      class="active"
+                      >Male</label
+                    >
+                  </div>
+                  <div class="addrSubType">
+                    <input type="radio" name="gender" id="female" value="female" /><label
+                      for="female"
+                      class=""
+                      >Female</label
+                    >
+                  </div>
+                  <input type="hidden" value="" />
+                </div>
+              </div>
+              <div class="wtsapp-tgl">
+                <div class="selectCheckbox selectCustomCheckbox selectCheckbox-blue">
+                  <input type="radio" style="opacity: 0" /><label></label>
+                </div>
+                <span>I want to receive order updates on Whatsapp</span>
+              </div>
+              <button type="submit" class="submit">SAVE CHANGES</button>
+            </form>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- section part -->
+
+    <footer class="sticky-top bg-dark text-white text-center">@copyrights name</footer>
+
+    <script src="assets/productList/assets/js/jquery.min.js"></script>
+    <script src="assets/productList/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/productList/assets/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
