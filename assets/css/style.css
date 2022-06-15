@@ -2668,7 +2668,28 @@ label {
   font-family: montserrat, sans-serif;
   font-size: 1em;
 }
-
+.paymentImage {
+  width: 45px;
+  margin-right: 10px;
+}
+.paymentImage img {
+  width: 100%;
+  vertical-align: middle;
+}
+.paymentCard span {
+  font-size: 14px;
+  font-family: montserrat, sans-serif;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.paymentCard p {
+  line-height: 1.33;
+  color: rgba(0, 0, 0, 0.51);
+  font-family: montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 100%;
+}
 /* a:hover {
   color: #eaf6f6;
 }

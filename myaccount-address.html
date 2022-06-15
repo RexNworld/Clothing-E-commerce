@@ -204,142 +204,61 @@
       </div>
     </div>
     <!-- section part -->
+
     <div class="container pt-5">
       <div class="row pb-5 bakToMyorder">
         <a href="myaccount.html"><i class="fa fa-angle-left fa-fw"></i>Back To My Account</a>
       </div>
       <div class="mainHeading">
         <div class="headingInner">
-          <h1>My Profile</h1>
+          <h1>My Address</h1>
           <div></div>
         </div>
       </div>
     </div>
     <div class="p-4"></div>
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-md-5">
-          <form action="">
-            <form name="profileForm" class="accProfileForm" autocomplete="off" novalidate="">
-              <div class="row">
-                <div class="col-xs-12 col-sm-6 noPd">
-                  <div class="inputgroup">
-                    <input type="text" name="fname" maxlength="71" value="Reshav" /><span
-                      class="bar"
-                    ></span
-                    ><label>First Name</label>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 noPdRight noPdXs">
-                  <div class="inputgroup">
-                    <input type="text" name="lname" /><span class="bar"></span
-                    ><label>Last Name</label><span class="msgs visible-xs"></span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="inputgroup">
-                <input type="email" name="email" readonly="" value="rexnworld@gmail.com" /><span
-                  class="bar"
-                ></span
-                ><label for="email">Email Id</label>
-              </div>
-              <div class="col-xs-12 col-sm-6 noPd">
-                <div class="inputgroup" style="margin-bottom: 60px">
-                  <input readonly="" value="******" style="letter-spacing: 2px" /><span
-                    class="bar"
-                  ></span
-                  ><label>Password</label
-                  ><a class="inputHelp" aria-current="false" href="#ChangePassword"
-                    >Change Password</a
-                  >
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6 noPd clearLeft">
-                <div class="inputgroup verifyPhoneInput veryfyMobileOuter">
-                  <input
-                    type="tel"
-                    name="mobile"
-                    maxlength="10"
-                    readonly=""
-                    value="9614464595"
-                  /><span class="bar"></span><span class="countryCode">+91<span>|</span></span
-                  ><label for="mobile">Phone Number</label>
-                  <div class="verifyMobileBox veryfyMobile">
-                    <p><i class="fa fa-check text-white" aria-hidden="true"></i></p>
-                  </div>
-                  <div class="inputHelp" style="cursor: pointer">Change Mobile Number</div>
-                </div>
-              </div>
-              <div class="inputgroup" style="margin-bottom: 60px">
-                <input
-                  class=""
-                  type="date"
-                  name="date_of_birth"
-                  id="DD/MM/YYYY"
-                  value=""
-                  style="
-                    text-transform: uppercase;
-                    font-size: 12px;
-                    white-space: nowrap;
-                    height: 25px;
-                  "
-                /><span class="bar"></span
-                ><span class="msgs"
-                  ><div style="margin-bottom: 10px">
-                    <span
-                      class="msgs"
-                      style="white-space: pre-wrap; position: unset; font-size: 10px"
-                      >Share your DOB to get special gifts or offers on your special day</span
-                    >
-                  </div></span
-                >
-              </div>
-              <div class="genderTabBox clearfix">
-                <span class="addrTypeTitle">Gender</span>
-                <div class="addrTypeList">
-                  <div class="addrSubType">
-                    <input type="radio" name="gender" id="male" value="male" /><label
-                      for="male"
-                      class="active"
-                      >Male</label
-                    >
-                  </div>
-                  <div class="addrSubType">
-                    <input type="radio" name="gender" id="female" value="female" /><label
-                      for="female"
-                      class=""
-                      >Female</label
-                    >
-                  </div>
-                  <input type="hidden" value="" />
-                </div>
-              </div>
-              <div class="wtsapp-tgl">
-                <div class="selectCheckbox selectCustomCheckbox selectCheckbox-blue">
-                  <input type="radio" style="opacity: 0" /><label></label>
-                </div>
-                <span>I want to receive order updates on Whatsapp</span>
-              </div>
-              <button type="submit" class="submit">SAVE CHANGES</button>
-            </form>
-          </form>
+      <div class="row optionRow">
+        <div
+          class="emptycartwish emptyPage d-flex justify-content-center"
+          style="padding: 10px 0px 0px"
+        >
+          <div>
+            <div class="clearfix pb-2" style="color: rgba(24, 24, 24, 0.6); font-size: 20px">
+              Sadly, you haven't placed any orders till now.
+            </div>
+            <img
+              src="https://images.bewakoof.com/sizeguide/no-orders.png"
+              title="Empty Cart Page Doodle"
+              alt="Empty Cart Page Doodle"
+              width="150px"
+            />
+            <div class="clearfix">
+              <a
+                class="success"
+                hreflang="en-in"
+                href="/"
+                style="
+                  padding: 10px;
+                  border: 2px solid;
+                  border-radius: 5px;
+                  display: inline-block;
+                  margin-top: 15px;
+                  text-decoration: none;
+                "
+                >Continue Shopping</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <!-- section part -->
 
-    <footer class="sticky-top bg-dark text-white text-center">@copyrights name</footer>
+    <footer class="fixed-bottom bg-dark text-white text-center">@copyrights name</footer>
 
     <script src="assets/productList/assets/js/jquery.min.js"></script>
     <script src="assets/productList/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/productList/assets/swiper/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper('.mySwiper', {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-      });
-    </script>
   </body>
 </html>
