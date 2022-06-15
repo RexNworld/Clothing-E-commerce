@@ -2590,6 +2590,84 @@ label {
 .container .card .content .price_rating .fa.grey {
   color: #dcdcdc;
 }
+.options {
+  float: left;
+  /* margin-right: 30px; */
+  position: relative;
+  padding: 30px 20px;
+  width: 20%;
+}
+
+.options:after {
+  content: '';
+  background-color: #979797;
+  width: 1px;
+  height: 64px;
+  opacity: 0.24;
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+.myOptions .options:last-child:after {
+  background-color: transparent;
+}
+.options > a {
+  display: block;
+  text-decoration: none;
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .options a {
+    padding: 20px 0;
+  }
+  .optionRow .myOptions {
+    border: none !important;
+  }
+  .options:after {
+    content: none;
+  }
+  .options {
+    width: 100%;
+    margin: 0;
+    float: none;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+    padding: 0;
+  }
+}
+.options > a > .optionHead {
+  font-family: montserrat, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  color: #181818;
+  margin: 0;
+  font-weight: 500;
+  display: inline-block;
+}
+.options > a > i {
+  font-size: 14px;
+  color: #979797;
+  padding-left: 10px;
+}
+.options > a > .des {
+  opacity: 0.7;
+  font-family: montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #181818;
+  margin: 10px 0 0;
+  display: block;
+  /* padding-right: 15px; */
+}
+.bakToMyorder a {
+  float: left;
+  text-decoration: none;
+  width: 100%;
+  letter-spacing: 0.2px;
+  color: #51cccc;
+  font-family: montserrat, sans-serif;
+  font-size: 1em;
+}
 
 /* a:hover {
   color: #eaf6f6;
